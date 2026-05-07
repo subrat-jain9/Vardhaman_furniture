@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vardhaman Furnitures – Premium Sofas & Crafted Comfort</title>
+  <meta name="description" content="Vardhaman Furnitures – Crafting premium sofas, recliners, and chairs since 2014. Quality you can feel, style you can see." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Playfair Display + Lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header id="navbar" class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo" aria-label="Vardhaman Furnitures Home">
+        <img src="logo.png" alt="Vardhaman Furnitures Logo" class="logo-img" />
+        <!-- <span class="logo-icon">&#9670;</span> -->
+        <div class="logo-text">
+          <span class="logo-main">Vardhaman</span>
+          <span class="logo-sub">Furnitures</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <!-- Close button inside drawer (mobile only) -->
+        <button class="nav-close" id="navClose" aria-label="Close menu">
+          <i data-feather="x"></i>
+        </button>
+        <a href="#home"     class="nav-link active">Home</a>
+        <a href="#about"    class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#furniture" class="nav-link">Furniture</a>
+        <a href="#reviews"  class="nav-link">Reviews</a>
+        <a href="#contact"  class="nav-link">Contact</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <!-- Mobile nav overlay -->
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+  <main>
+
+    <!-- ===================== PRODUCT DETAIL MODAL ===================== -->
+  <div class="modal-overlay" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Close details">
+        <i data-feather="x"></i>
+      </button>
+      <div class="modal-content" id="modalContent">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </div>
+
+  <main>
+    
+    <!-- ===================== HOME / HERO ===================== -->
+    <section id="home" class="hero-section">
+      <div class="hero-bg-shapes">
+        <div class="hero-shape shape-1"></div>
+        <div class="hero-shape shape-2"></div>
+      </div>
+      <div class="container hero-container">
+        <div class="hero-content animate-on-scroll">
+          <!-- <span class="hero-eyebrow">Est. 2014 · Hyderabad</span> -->
+          <h1 class="hero-title">
+            Premium Sofas<br />
+            <em>Crafted for</em><br />
+            Comfort &amp; Style
+          </h1>
+          <p class="hero-desc">
+            Handcrafted furniture that transforms your living space into a sanctuary of warmth, elegance, and unmatched quality.
+          </p>
+          <div class="hero-cta">
+            <a href="#furniture" class="btn btn-primary">Explore Furniture</a>
+            <a href="#contact"   class="btn btn-outline">Contact Us</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>12+</strong>
+              <span>Years Trusted</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <strong>20+</strong>
+              <span>Years Experience</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <strong>5000+</strong>
+              <span>Happy Homes</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual animate-on-scroll delay-2">
+          <div class="hero-image-frame">
+            <img
+              src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&auto=format&fit=crop&q=80"
+              alt="Luxury sofa in a modern living room"
+              class="hero-img"
+              loading="eager"
+            />
+            <div class="hero-badge">
+              <i data-feather="award"></i>
+              <span>Premium Quality</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Categories -->
+      <div class="featured-categories container">
+        <div class="cat-card animate-on-scroll" data-filter="Sofas" role="button" tabindex="0" aria-label="Browse Sofas">
+          <div class="cat-icon">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=300&auto=format&fit=crop&q=70" alt="Sofas" />
+          </div>
+          <span>Sofas</span>
+        </div>
+        <div class="cat-card animate-on-scroll delay-1" data-filter="Recliners" role="button" tabindex="0" aria-label="Browse Recliners">
+          <div class="cat-icon">
+            <img src="recliner chair.png" alt="Recliners" />
+          </div>
+          <span>Recliners</span>
+        </div>
+        <div class="cat-card animate-on-scroll delay-2" data-filter="Chairs" role="button" tabindex="0" aria-label="Browse Chairs">
+          <div class="cat-icon">
+            <img src="Executive low back.png" alt="Chairs" />
+          </div>
+          <span>Chairs</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== WHY CHOOSE US ===================== -->
+    <section class="why-section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-eyebrow">Our Promise</span>
+          <h2 class="section-title">Why Choose Vardhaman?</h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-card animate-on-scroll">
+            <div class="why-icon"><i data-feather="shield"></i></div>
+            <h3>Trusted Since 2014</h3>
+            <p>Over a decade of delivering quality furniture to thousands of happy families across Hyderabad and beyond.</p>
+          </div>
+          <div class="why-card animate-on-scroll delay-1">
+            <div class="why-icon"><i data-feather="tool"></i></div>
+            <h3>20+ Years Craftsmanship</h3>
+            <p>Our master craftsmen bring two decades of expertise to every piece — ensuring durability and beauty in equal measure.</p>
+          </div>
+          <div class="why-card animate-on-scroll delay-2">
+            <div class="why-icon"><i data-feather="star"></i></div>
+            <h3>Premium Materials</h3>
+            <p>We source only the finest fabrics, hardwoods, and foams — each material chosen for comfort, longevity, and elegance.</p>
+          </div>
+          <div class="why-card animate-on-scroll delay-3">
+            <div class="why-icon"><i data-feather="settings"></i></div>
+            <h3>Custom Designs</h3>
+            <p>Can't find what you need? We craft bespoke furniture tailored exactly to your taste, dimensions, and budget.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="about-section">
+      <div class="container about-container">
+        <div class="about-visual animate-on-scroll">
+          <div class="about-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=700&auto=format&fit=crop&q=80"
+              alt="Craftsman working on furniture"
+              class="about-img"
+            />
+            <!-- <div class="about-img-overlay">
+              <div class="overlay-stat">
+                <strong>2014</strong>
+                <span>Established</span>
+              </div>
+            </div> -->
+          </div>
+          <div class="about-img-secondary">
+            <img
+              src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&auto=format&fit=crop&q=80"
+              alt="Modern living room with Vardhaman furniture"
+            />
+          </div>
+        </div>
+        <div class="about-content animate-on-scroll delay-2">
+          <span class="section-eyebrow">Our Story</span>
+          <h2 class="section-title">Crafted With Passion,<br /><em>Built to Last</em></h2>
+          <p>
+            Vardhaman Furnitures was founded in 2014 with a single, unwavering vision: to bring world-class furniture craftsmanship to every home. What started as a small workshop has grown into one of Hyderabad's most trusted furniture brands — powered by over 20 years of collective experience.
+          </p>
+          <p>
+            We believe that great furniture is more than just wood and fabric — it's the place where families gather, stories are told, and memories are made. Every piece we craft carries the weight of that belief.
+          </p>
+          <ul class="about-highlights">
+            <li><i data-feather="check-circle"></i> Handpicked premium raw materials</li>
+            <li><i data-feather="check-circle"></i> Master craftsmen with 20+ years experience</li>
+            <li><i data-feather="check-circle"></i> Custom sizing &amp; bespoke designs available</li>
+            <li><i data-feather="check-circle"></i> 1 year warranty on all products</li>
+            <li><i data-feather="check-circle"></i> 5000+ satisfied families across Hyderabad</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-eyebrow">What We Offer</span>
+          <h2 class="section-title">Our Services</h2>
+          <p class="section-subtitle">From craftsmanship to care — we're with you every step of the way.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon-wrap">
+              <i data-feather="shield"></i>
+            </div>
+            <h3>1 Year Warranty</h3>
+            <p>Every piece of furniture we craft is backed by a comprehensive 1-year warranty. We stand behind our quality — if something goes wrong, we make it right.</p>
+            <ul class="service-list">
+              <li>Covers manufacturing defects</li>
+              <li>Frame &amp; spring guarantee</li>
+              <li>Fabric quality assurance</li>
+            </ul>
+          </div>
+          <div class="service-card animate-on-scroll delay-1">
+            <div class="service-icon-wrap">
+              <i data-feather="tool"></i>
+            </div>
+            <h3>Repair Services</h3>
+            <p>After warranty period, our skilled team offers affordable paid repair services. We restore your furniture to its original glory — fast, reliable, and at fair prices.</p>
+            <ul class="service-list">
+              <li>Re-upholstery &amp; fabric work</li>
+              <li>Frame repair &amp; reinforcement</li>
+              <li>Foam replacement</li>
+            </ul>
+          </div>
+          <div class="service-card animate-on-scroll delay-2">
+            <div class="service-icon-wrap">
+              <i data-feather="edit-3"></i>
+            </div>
+            <h3>Custom Design</h3>
+            <p>Have a vision in mind? Our design team will bring it to life. We create fully bespoke furniture tailored to your space, taste, and lifestyle — uniquely yours.</p>
+            <ul class="service-list">
+              <li>Custom dimensions &amp; shapes</li>
+              <li>Fabric &amp; colour selection</li>
+              <li>Personalized finish options</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FURNITURE ===================== -->
+    <section id="furniture" class="furniture-section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-eyebrow">Our Collection</span>
+          <h2 class="section-title">Explore Our Furniture</h2>
+          <p class="section-subtitle">Each piece is crafted with precision and passion — find yours today.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-bar animate-on-scroll" id="filterBar" role="group" aria-label="Filter furniture by category">
+          <button class="filter-btn active" data-category="All">All</button>
+          <button class="filter-btn" data-category="Sofas">Sofas</button>
+          <button class="filter-btn" data-category="Recliners">Recliners</button>
+          <button class="filter-btn" data-category="Chairs">Chairs</button>
+        </div>
+
+        <!-- Products Grid (rendered by JS) -->
+        <div class="products-grid" id="productsGrid" role="list" aria-label="Furniture products">
+          <!-- Dynamically rendered by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== REVIEWS ===================== -->
+    <section id="reviews" class="reviews-section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-eyebrow">What Our Clients Say</span>
+          <h2 class="section-title">What Our Customers Say</h2>
+        </div>
+
+        <!-- 3-card hover grid rendered by JS -->
+        <div class="reviews-grid" id="reviewsGrid"></div>
+
+        <!-- Write a review -->
+        <div class="view-all-reviews animate-on-scroll">
+          <a
+            href="https://reviewthis.biz/vardhaman_furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline"
+          >
+            <i data-feather="map-pin"></i>&nbsp; Write a review
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 class="section-title">Contact Us</h2>
+          <p class="section-subtitle">We'd love to help you find the perfect furniture for your home.</p>
+        </div>
+        <div class="contact-container">
+          <!-- Contact Info -->
+          <div class="contact-info animate-on-scroll">
+            <div class="contact-card">
+              <div class="contact-item">
+                <div class="contact-icon"><i data-feather="phone"></i></div>
+                <div>
+                  <strong>Phone</strong>
+                  <a href="tel:+919849943765">Rajesh Jain</a><br>
+                  <a href="tel:+919908585026">Manish Jain</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i data-feather="message-circle"></i></div>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <a href="https://wa.me/919849943765" target="_blank" rel="noopener noreferrer">Rajesh Jain</a><br>
+                  <a href="https://wa.me/919908585026" target="_blank" rel="noopener noreferrer">Manish Jain</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i data-feather="mail"></i></div>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:rajeshjain4762@gmail.com">rajeshjain4762@gmail.com</a><br>
+                  <a href="mailto:manish.jain351@gmail.com">manish.jain351@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i data-feather="map-pin"></i></div>
+                <div>
+                  <strong>Address</strong>
+                  <span style="font-weight: bold;">Vardhaman Furnitures<br />13-3-634, Puranapool, Hyderabad,<br />Telangana – 500006</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Google Map — right side -->
+          <div class="contact-map-right animate-on-scroll delay-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15231.606413154861!2d78.4638268!3d17.368467149999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9799e61e26f3%3A0x1700a47b3fdd1e2b!2sVardhman%20furniture!5e0!3m2!1sen!2sin!4v1777139562642!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Vardhaman Furnitures Location on Google Maps"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="logo logo-footer" aria-label="Vardhaman Furnitures">
+          <img src="logo.png" alt="Vardhaman Furnitures Logo" class="logo-img" />
+          <!-- <span class="logo-icon">&#9670;</span> -->
+          <div class="logo-text">
+            <span class="logo-main">Vardhaman</span>
+            <span class="logo-sub">Furnitures</span>
+          </div>
+        </a>
+        <p>Crafting comfort and elegance since 2014. Premium sofas, recliners, and chairs built for the discerning home.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61578177520799&sfnsn=wa" target="_blank" aria-label="Facebook" class="social-link"><i data-feather="facebook"></i></a>
+          <a href="https://www.instagram.com/vardhaman_furniture._" target="_blank" aria-label="Instagram" class="social-link"><i data-feather="instagram"></i></a>
+          <!-- <a href="#" aria-label="YouTube" class="social-link"><i data-feather="youtube"></i></a> -->
+          <a href="https://wa.me/919849943765" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-link"><i data-feather="message-circle"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#furniture">Furniture</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Our Products</h4>
+        <ul>
+          <li><a href="#furniture">Sofas</a></li>
+          <li><a href="#furniture">Recliners</a></li>
+          <li><a href="#furniture">Chairs</a></li>
+          <li><a href="#services">Custom Design</a></li>
+          <li><a href="#services">Repair Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Info</h4>
+        <ul>
+          <li><i data-feather="phone"></i> <a href="tel:+919849943765">Rajesh Jain</a><a href="tel:+919908585026">Manish Jain</a></li>
+          <li><i data-feather="mail"></i> <a href="mailto:rajeshjain4762@gmail.com">rajeshjain4762@gmail.com</a><a href="mailto:manish.jain351@gmail.com">manish.jain351@gmail.com</a></li>
+          <li><i data-feather="map-pin"></i>Vardhaman Furnitures<br />13-3-634, Puranapool, Hyderabad,<br />Telangana – 500006 </li>
+          <li><i data-feather="clock"></i> Mon–Sat: 11am – 9pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Vardhaman Furnitures. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===================== WHATSAPP FLOAT ===================== -->
+  <a
+    href="https://wa.me/919849943765"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with us on WhatsApp"
+    title="Chat on WhatsApp"
+  >
+    <img src="whatsapp logo.png" alt="WhatsApp" />
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.413A9.953 9.953 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm4.923 14.077c-.207.578-1.2 1.105-1.655 1.173-.424.063-.961.089-1.551-.098-.358-.112-.818-.262-1.408-.514-2.475-1.068-4.089-3.557-4.213-3.723-.12-.166-.98-1.304-.98-2.487 0-1.183.62-1.764.84-2.004.22-.24.48-.3.64-.3.16 0 .32.002.46.009.147.007.344-.056.54.413.2.479.68 1.66.74 1.78.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.244.25-.104.49.14.24.62 1.02 1.33 1.65.914.8 1.686 1.048 1.927 1.167.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.148 1.158z"/>
+    </svg> -->
+    <span class="whatsapp-tooltip">Chat with us!</span>
+  </a>
+
+  <!-- ===================== SCROLL TO TOP ===================== -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i data-feather="arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
