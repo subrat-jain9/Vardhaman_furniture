@@ -199,7 +199,7 @@ const PRODUCTS_DATA = [
   {
     id: 7,
     name: 'Berlin Sofa Sets',
-    category: 'Sofa Setss',
+    category: 'Sofa Sets',
     description: 'Premium 3+1 Sofa Sets featuring soft Fabric upholstery, ergonomic high-back support, plush armrests, and a modern minimalist design for luxurious living spaces.',
     image: 'images/berlin model.png',
     rating: 5,
@@ -663,7 +663,7 @@ const PRODUCTS_DATA = [
   {
     id: 22,
     name: 'Home Town Sofa Sets',
-    category: 'Sofa Setss',
+    category: 'Sofa Sets',
     description: 'Luxury modular Sofa Sets featuring premium dual-tone upholstery, spacious seating, matching ottomans, and a multifunction center table—designed for elegant modern living spaces.',
     image: 'images/home town model.png',
     rating: 5,
@@ -694,7 +694,7 @@ const PRODUCTS_DATA = [
   {
     id: 23,
     name: 'Kit Kat Sofa Sets',
-    category: 'Sofa Setss',
+    category: 'Sofa Sets',
     description: 'Elegant 3+1+1 Sofa Sets featuring dual-tone upholstery, deep cushioned seating, floral designer back cushions, and premium comfort for modern living spaces.',
     image: 'images/kit kat 3+1+1.png',
     rating: 5,
@@ -725,7 +725,7 @@ const PRODUCTS_DATA = [
   {
     id: 24,
     name: 'Kit Kat Modular Sofa Sets',
-    category: 'Sofa Setss',
+    category: 'Sofa Sets',
     description: 'Luxury modular Sofa Sets featuring a 3-seater, chaise lounge, 2-seater, center table, ottomans, and designer floral cushions—crafted for stylish and spacious living rooms.',
     image: 'images/Kit kat center table.png',
     rating: 5,
@@ -912,7 +912,7 @@ const PRODUCTS_DATA = [
   // {
   //   id: 30,
   //   name: 'Modern Recliner Chaise Sofa',
-  //   category: 'Sofa Setss',
+  //   category: 'Sofa Sets',
   //   description: 'Luxury modern sofa featuring chaise lounge comfort, built-in recliner footrest, premium upholstery, and elegant contemporary styling—designed for ultimate relaxation.',
   //   image: 'images/Modern recliner sofa.png',
   //   rating: 5,
@@ -1139,7 +1139,7 @@ const PRODUCTS_DATA = [
   {
     id: 37,
     name: 'Modern RJ Sofa Sets',
-    category: 'Sofa Setss',
+    category: 'Sofa Sets',
     description: 'Premium 3+1+1 Sofa Sets featuring sleek contemporary styling, soft plush cushioning, premium upholstery, and a minimalist silhouette—perfect for modern living rooms, office lounges, reception areas, and premium interiors.',
     image: 'images/RJ model.png',
     rating: 5,
